@@ -57,13 +57,14 @@
     <!-- Schedule Section -->
     <div class="mountain-tabs">
         <div class="tabs">
-            <button type="button" class="btn btn-secondary" id="mountain-one">MOUNTAIN 1</button>
-            <button type="button" class="btn btn-secondary" id="mountain-two">MOUNTAIN 2</button>
+            <button type="button" class="active" id="mountain-one">MOUNTAIN 1</button>
+            <button type="button" class="inactive" id="mountain-two">MOUNTAIN 2</button>
         </div>
     </div>
-    <div class="schedule-section">
+    <div class="active-section" id="schedule-section">
         <div class="schedule-image">
-            <img class="tab-one" src="images/lam-tab-1-schedule.png" alt="tab-one" width="400" height="280" />
+            <img class="active-tab-image" id="tab-one-image" src="images/lam-tab-1-schedule.png" alt="tab-one" width="400" height="280" />
+            <img class="inactive-tab-image" id="tab-two-image" src="images/lam-tab-2-schedule.png" alt="tab-one" width="400" height="280" />
         </div>
         <div class="footer">
             <div class="footer-div">
@@ -95,5 +96,6 @@
 * Refactor css 
     - Minimize repeated code
     - Code the color variables
+* Change font families
 * If I have time, make a parallax out of the hero section title
 -->

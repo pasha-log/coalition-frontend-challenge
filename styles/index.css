@@ -119,21 +119,22 @@
 	font-weight: 500;
 	border-radius: 0%;
 	border: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
-#mountain-one {
+.active {
 	background-color: rgb(171, 171, 171);
 	color: #364659;
 	text-decoration: underline;
 }
 
-#mountain-two {
+.inactive {
 	background-color: #364659;
 	color: rgb(171, 171, 171);
 }
 
-.schedule-section {
-	background-image: url("../images/lam-tab-1.png");
+#schedule-section {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -143,14 +144,30 @@
 	align-content: space-between;
 }
 
+.active-section {
+	background-image: url("../images/lam-tab-1.png");
+}
+
+.inactive-section {
+	background-image: url("../images/lam-tab-2.png");
+}
+
 .schedule-image {
 	/* border: solid 2px red; */
 	width: 62%;
 }
 
-.tab-one {
+.schedule-image img {
 	margin-top: 6rem;
 	margin-left: 2.5rem;
+}
+
+.active-tab-image {
+	display: block;
+}
+
+.inactive-tab-image {
+	display: none;
 }
 
 .footer {
