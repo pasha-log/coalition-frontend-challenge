@@ -9,7 +9,9 @@
 </head>
 <body>
 
-    <section class="top-section">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Top Navbar -->
         <nav class="navbar">
             <div id="navbar-content" class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -22,6 +24,7 @@
             </div>
         </nav>
     </section>
+    <!-- Second Navbar -->
     <div class="navbar">
         <div id="navbar-content" class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -34,12 +37,45 @@
             </div>
         </div>
     </div>
-    <section class="middle-section">
+    <!-- History Section -->
+    <section class="history-section">
         <div class="history-info">
             <img class="history-title" src="images/lam-big-01-title.png" alt="01-title" width="180" height="120" />
             <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Felis imperdiet proin fermentum leo vel orci porta non. Diam in arcu cursus euismod quis viverra. Dignissim convallis aenean et tortor.</p>
         </div>
+        <div class="carousel-section">
+
+        </div>
     </section>
+    <!-- Climb Section -->
+    <section class="climb-section">
+        <div class="climb-info">
+            <img class="climb-title" src="images/lam-big-02-title.png" alt="01-title" width="180" height="120" />
+            <p class="climb-text">Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Proin sed libero enim sed faucibus. Adipiscing commodo elit at imperdiet dui accumsan.</p>
+        </div>
+    </section>
+    <!-- Schedule Section -->
+    <div class="mountain-tabs">
+        <div class="tabs">
+            <button type="button" class="btn btn-secondary" id="mountain-one">MOUNTAIN 1</button>
+            <button type="button" class="btn btn-secondary" id="mountain-two">MOUNTAIN 2</button>
+        </div>
+    </div>
+    <div class="schedule-section">
+        <div class="schedule-image">
+            <img class="tab-one" src="images/lam-tab-1-schedule.png" alt="tab-one" width="400" height="280" />
+        </div>
+        <div class="footer">
+            <div class="footer-div">
+                <a class="footer-logo-link">
+                    <img class="footer-logo" src="images/lam-footer-logo.png" alt="footer-logo" width="205" height="65" />
+                </a>
+                <div class="copyright">
+                    COPYRIGHT 2016. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Library JS & our JS -->
     <script src="https://unpkg.com/jquery"></script>
@@ -48,3 +84,16 @@
     <script src="scripts/index.js"></script>
 </body>
 </html>
+
+<!-- TODO 
+* Build responsive carousel with flickity?
+* Add tab functionality, that turns into accordion on smaller sizes
+    - Tabs use two types of buttons: active and inactive. JavaScript should change picture and schedule.
+* Nav links take you to respective sections
+* Overall responsiveness of content
+    - Use media queries and clamps
+* Refactor css 
+    - Minimize repeated code
+    - Code the color variables
+* If I have time, make a parallax out of the hero section title
+-->

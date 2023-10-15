@@ -3,7 +3,7 @@
 	margin: 0;
 }
 
-.top-section {
+.hero-section {
 	background-image: url("../images/lam-top-image.png");
 	background-size: cover;
 	background-position: center center;
@@ -30,10 +30,10 @@
 }
 
 .second-nav-links a {
-	color: rgb(61, 61, 116);
+	color: #364659;
 }
 
-.middle-section {
+.history-section {
 	background-image: url("../images/lam-middle-image.png");
 	background-size: cover;
 	background-position: center center;
@@ -41,6 +41,7 @@
 	height: 100vh;
 	display: grid;
 	justify-items: center;
+	align-content: space-between;
 }
 
 .history-info {
@@ -57,4 +58,122 @@
 	/* border: solid 2px green; */
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
+}
+
+.carousel-section {
+	background-color: #364659cf;
+	width: 100%;
+	height: 10rem;
+	bottom: 0;
+	/* border: solid 2px yellow; */
+}
+
+.carousel {
+	margin: 5rem;
+	/* width: 20rem; */
+}
+
+.carousel-indicators [data-bs-target] {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+}
+
+.climb-section {
+	display: grid;
+	justify-items: center;
+}
+
+.climb-info {
+	display: flex;
+	align-items: center;
+	/* border: solid 2px red; */
+	width: 62%;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-left: 3rem;
+	padding-right: 1rem;
+}
+
+.climb-text {
+	padding-left: 1rem;
+}
+
+.mountain-tabs {
+	background-color: #364659;
+	width: 100%;
+	height: 2.5rem;
+	display: grid;
+	justify-items: center;
+}
+
+.tabs {
+	width: 62%;
+	display: flex;
+	align-items: center;
+}
+
+.tabs button {
+	height: 100%;
+	font-weight: 500;
+	border-radius: 0%;
+	border: none;
+}
+
+#mountain-one {
+	background-color: rgb(171, 171, 171);
+	color: #364659;
+	text-decoration: underline;
+}
+
+#mountain-two {
+	background-color: #364659;
+	color: rgb(171, 171, 171);
+}
+
+.schedule-section {
+	background-image: url("../images/lam-tab-1.png");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: grid;
+	justify-items: center;
+	align-content: space-between;
+}
+
+.schedule-image {
+	/* border: solid 2px red; */
+	width: 62%;
+}
+
+.tab-one {
+	margin-top: 6rem;
+	margin-left: 2.5rem;
+}
+
+.footer {
+	background-color: #465573;
+	width: 100%;
+	height: 5rem;
+	display: grid;
+	justify-items: center;
+}
+
+.footer-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 62%;
+	/* border: solid 2px green; */
+}
+
+.footer-logo-link {
+	margin-left: 1.5rem;
+}
+
+.copyright {
+	color: #687da6;
+	font-weight: 500;
 }
