@@ -16,7 +16,7 @@
         <nav class="navbar">
             <div id="navbar-content" class="container-fluid">
                 <a class="navbar-brand">
-                    <img class="logo" src="images/lam-logo.png" alt="logo" width="40" height="40">
+                    <img id="top-logo" class="logo" src="images/lam-logo.png" alt="logo" width="40" height="40">
                 </a>
                 <div class="nav-links">
                     <a class="history-link" href="#history">01. HISTORY</a>
@@ -78,14 +78,42 @@
             <img class="active-tab-image" id="tab-one-image" src="images/lam-tab-1-schedule.png" alt="tab-one" width="400" height="280" />
             <img class="inactive-tab-image" id="tab-two-image" src="images/lam-tab-2-schedule.png" alt="tab-one" width="400" height="280" />
         </div>
-        <div class="footer">
-            <div class="footer-div">
-                <a class="footer-logo-link" href="#hero">
-                    <img class="footer-logo" src="images/lam-footer-logo.png" alt="footer-logo" width="205" height="65" />
-                </a>
-                <div class="copyright">
-                    COPYRIGHT 2016. ALL RIGHTS RESERVED
-                </div>
+    </div>
+    <!-- Schedule Accordian For Mobile -->
+    <div class="accordion accordion-flush" id="accordionFlush">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="accordion-button-one" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              MOUNTAIN 1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+            <div id="accordion-body-one" class="accordion-body">
+                <img class="" id="" src="images/lam-tab-1-schedule.png" alt="tab-one" width="400" height="280" />
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button id="accordion-button-two" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                MOUNTAIN 2
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+            <div id="accordion-body-two" class="accordion-body">
+                <img class="" id="" src="images/lam-tab-2-schedule.png" alt="tab-one" width="400" height="280" />
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-div">
+            <a class="footer-logo-link" href="#hero">
+                <img class="footer-logo" src="images/lam-footer-logo.png" alt="footer-logo" width="205" height="65" />
+            </a>
+            <div class="copyright">
+                COPYRIGHT 2016. ALL RIGHTS RESERVED
             </div>
         </div>
     </div>
@@ -100,12 +128,6 @@
 </html>
 
 <!-- TODO 
-* Build responsive carousel with flickity?
-* Add tab functionality, that turns into accordion on smaller sizes
-    - Tabs use two types of buttons: active and inactive. JavaScript should change picture and schedule.
-* Nav links take you to respective sections
-* Overall responsiveness of content
-    - Use media queries and clamps
 * Refactor css 
     - Minimize repeated code
     - Code the color variables
