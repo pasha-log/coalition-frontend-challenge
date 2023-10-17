@@ -16,7 +16,6 @@
 }
 
 /* Main Background Image Properties */
-.hero-section,
 .history-section,
 #schedule-section,
 #accordion-body-one,
@@ -26,13 +25,46 @@
 	background-repeat: no-repeat;
 }
 
-/* Hero Section */
+/* Parallax Effect For The Hero Section */
 .hero-section {
-	background-image: url("../images/lam-top-image.png");
-	height: 100vh;
+	display: none;
 }
 
-/* Nav Bar */
+.parallax-wrapper {
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	perspective: 10px;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.background {
+	transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+	transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* Nav Bars */
 #navbar-content {
 	width: 60%;
 }
@@ -58,6 +90,16 @@
 
 .second-nav-links a {
 	color: var(--blue);
+}
+
+#navbar-one {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+
+#navbar-two {
+	background-color: var(--white) !important;
 }
 
 /* History Section */
@@ -257,10 +299,19 @@
 @media screen and (max-width: 768px) {
 	/* Hero Section */
 	.hero-section {
+		display: block;
+		background-image: url("../images/lam-hero-image.png");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 		height: 40vh;
 	}
 
-	/* Nav Bar */
+	header {
+		display: none;
+	}
+
+	/* Nav Bars */
 	#navbar-content {
 		width: 100%;
 	}
@@ -334,8 +385,7 @@
 	}
 }
 
-@media screen and (max-width: 415px) {
-	/* History Section */
+@media screen and (max-width: 400px) {
 	.history-section {
 		height: 120vh;
 	}
