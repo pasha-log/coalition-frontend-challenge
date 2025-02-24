@@ -109,6 +109,8 @@ header {
 	display: grid;
 	justify-items: center;
 	align-content: space-between;
+	z-index: 10;
+	position: relative;
 }
 
 .history-info {
